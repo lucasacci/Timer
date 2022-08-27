@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			const tiempoRestante = fechaFuturo.getTime() - new Date().getTime();
 			if (tiempoRestante <= 0) {
 				clearInterval(idInterval);
-				sonido.play();
+				
 				ocultarElemento($btnPausar);
 				mostrarElemento($btnDetener);
 			} else {
